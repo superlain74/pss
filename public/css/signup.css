@@ -1,0 +1,55 @@
+.cb7 {
+    width: 200px;
+}
+
+.food {
+    float:left;
+}
+
+.checks {
+    width: 800px;
+   padding-left: 0px;
+}
+
+.checks2 {
+    width: 800px;
+    margin-left:200px;
+}
+
+.home {
+    float:right;
+}
+
+.types {
+  padding: 0px 0px 0px 0px;
+
+}
+
+.budget {
+    float:right;
+    
+    
+}
+
+.btn-warning {
+    color:#212529;
+    background-color:#ffc107;
+    border-color:#ffc107;
+    float:center;
+}
+
+.wrapper {
+        text-align: center;
+}
+    
+.button {
+        position: absolute;
+        top: 50%;
+}
+
+
+.card {
+    border: 0;
+}
+
+
