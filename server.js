@@ -10,6 +10,12 @@ const db = require("./models");
 const cors = require('cors');
 
 //this is where the code from Annalisa goes
+app.use(function (req, res, next) {
+    res.header('Cache-Control', 'private, no-cache, no-store, must-revalidate');
+    res.header('Expires', '-1');
+    res.header('Pragma', 'no-cache');
+    next()
+});
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
