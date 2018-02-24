@@ -1,30 +1,36 @@
     <!-- Main  -->
+   <script>
+$(document).ready(function() {
+    recipesToFind();
+})
+</script>
+
+
     <div class="container">
-        <div class="row">
-            <div class="col-12">
+        <div id="recipe-cards" class="section">
 
-                <div class="col-12">
-                    <div class="card" style="margin-top: 15px">
-                        <div class="card-body">
-                            <h3 class="card-title">Results</h3>
-                            </br>
+            <!--   Returned Recipes Section   -->
+        </div>
+    </div>
 
-                            <!-- card info -->
+    <script id="card-template" type="text/x-handlebars-template">
 
+        <div class="col s12 m4">
+            <div class="card" style="width: 315px">
+                <div class="card-image" data-img-url="{{recipe.image}}" style="background-image: url({{recipe.image}}); height: 320px">
+                </div>
+                <div class="card-block recipe-id">
+                    <h4 class="card-title">({{recipe.label}})</h4>
+                    <p class="card-text">({{recipe.ingredientLines}})</p>
+                    <!-- <p style="display:none;"{{recipe.ingredients}}></p> -->
+                    <div>
+                        <button class="btn btn-warning my-2 my-sm-0 addToMealPlan">Add to Meal Plan</button>
+                        <button class="btn btn-warning my-2 my-sm-0 addToFavorites">Add to Favorites</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-                            <script id="card-template" type="text/x-handlebars-template">
-
-                                <div class="col s12 m4">
-                                    <div class="card" style="height: 425px">
-                                        <div class="card-image" style="background-image: url({{image}}); height: 275px; background-size: cover">
-                                        </div>
-                                        <div class="card-content">
-                                            <h6>{{{title}}}</h6>
-                                            <p><a href="{{source_url}}" target="blank">Link here</a></p>
-                                        </div>
-                                    </div>
-                                </div>
 
                             </script>
 
@@ -32,26 +38,7 @@
                             <!-- end card info -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <br/><br/>
-            </div>
-        </div>
-    </div>
+          
 
     <!-- Footer -->
     <footer class="footer bg-warning">
@@ -65,3 +52,4 @@
             </div>
         </div>
     </footer>
+

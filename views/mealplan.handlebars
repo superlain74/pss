@@ -1,40 +1,39 @@
   <!-- Main  -->
 
-  <div class="container">
-    <div class="row">
-      <div class="col-8">
-        <div class="row">
-          <div class="col-12">
-            <div class="card" style="margin-top: 15px">
-              <div class="card-body">
-                <h3 class="card-title">Suggested Meals</h3>
-                </br>
-              </div>
-            </div>
-          </div>
+  
+
+
+    <div class="container">
+        <div id="recipe-cards" class="section">
+
+            <!--   Returned Recipes Section   -->
         </div>
-        <div class="row">
-          <div class="col-12">
-            <div class="card" style="margin-top: 15px">
-            </div>
-          </div>
-        </div>
-        <br/>
-        <br/>
-      </div>
-      <div class="col-4">
-        <div class="card" style="width: 22rem; margin-top: 15px">
-          <div class="card-body">
-            <h5 class="card-title">Info here</h5>
-            <p class="card-text">
-              Info here
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  </div>
+
+    <script id="card-template" type="text/x-handlebars-template">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body" style="width: 315px">
+                        <div class="card-image" style="background-image: url({{recipe.image}}); height: 320px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <!--  <p class="card-text">({{recipe.ingredientLines}})</p> -->
+                        <p class="card-text ingredients">" "</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </script>
+
+
 
   <!-- Footer -->
   <footer class="footer bg-warning">
@@ -48,3 +47,7 @@
       </div>
     </div>
   </footer>
+ <script type="text/javascript" src="javascript/mealplan.js"></script>
+ <script>
+
+ </script>   
