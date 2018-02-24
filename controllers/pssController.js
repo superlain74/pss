@@ -33,6 +33,9 @@ app.get("/team", function(req, res) {
     res.render("team");
 });
 
+app.get("/searchResults", function(req, res) {
+    res.render("searchResults");
+});
 
   // If no matching route is found default to home
   app.get("*", function(req, res) {
