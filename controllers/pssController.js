@@ -12,7 +12,6 @@ module.exports = function(app) {
         res.render("favorites");
     });
 
-
     app.get("/mealplan", function(req, res) {
         res.render("mealplan");
     });
@@ -32,11 +31,4 @@ module.exports = function(app) {
     app.get("/team", function(req, res) {
         res.render("team");
     });
-
-    /*
-        // If no matching route is found default to home
-        app.get("*", function(req, res) {
-            res.render("home");
-        });
-    */
 };
